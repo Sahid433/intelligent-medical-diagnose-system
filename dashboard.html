@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dashboard</title>
+<link rel="stylesheet" href="style.css">
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+
+<div class="container">
+
+    <h1>🩺 Intelligent Medical Diagnosis System</h1>
+
+    <button onclick="toggleDarkMode()">🌙 Toggle Dark Mode</button>
+
+    <div class="symptoms">
+
+        <h2>Select Symptoms</h2>
+
+        <label><input type="checkbox" value="fever"> Fever</label>
+        <label><input type="checkbox" value="cough"> Cough</label>
+        <label><input type="checkbox" value="headache"> Headache</label>
+        <label><input type="checkbox" value="cold"> Cold</label>
+        <label><input type="checkbox" value="vomiting"> Vomiting</label>
+        <label><input type="checkbox" value="fatigue"> Fatigue</label>
+        <label><input type="checkbox" value="chestpain"> Chest Pain</label>
+        <label><input type="checkbox" value="sorethroat"> Sore Throat</label>
+
+    </div>
+
+    <button onclick="diagnose()">Diagnose Disease</button>
+
+    <button onclick="startVoiceAssistant()">🎤 Voice Assistant</button>
+
+    <div id="result"></div>
+
+    <canvas id="myChart"></canvas>
+
+    <div class="history">
+        <h2>Patient History</h2>
+        <ul id="historyList"></ul>
+    </div>
+
+</div>
+
+<script src="dashboard.js"></script>
+</body>
+</html>
